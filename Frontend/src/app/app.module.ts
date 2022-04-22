@@ -11,6 +11,7 @@ import { TituloComponent } from './componenets/layouts/main/content/titulo/titul
 import { ClientListComponent } from './componenets/client/client-list/client-list.component';
 import { ClientsService } from './services/clients.service';
 import { CreateClientComponent } from './componenets/client/create-client/create-client.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CreateClientComponent } from './componenets/client/create-client/create
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     ClientsService
